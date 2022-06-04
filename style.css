@@ -10,7 +10,6 @@
 
 html{scroll-behavior: smooth;}
 
-img{display: none;}
 
 @media (max-width: 375px){
     /* header */
@@ -22,7 +21,7 @@ img{display: none;}
         display: flex;
     }
 
-    h1{font-size: 2em; padding: 0.2em; font-weight: 400;}
+    h1{font-size: 2em; padding: 0.2em; font-weight: 400; z-index: 1;}
 
     nav{display: none;}
 
@@ -37,7 +36,7 @@ img{display: none;}
         width: 100%;
     }
 
-    nav ul{list-style: none; text-align: center; padding: 5em;}
+    nav ul{list-style: none; text-align: left; padding: 4em;}
 
     nav ul li{padding: 1em;}
     nav ul li a{text-decoration: none; color: #fff; font-size: 1.5em; text-transform: uppercase;}
@@ -45,4 +44,22 @@ img{display: none;}
     nav ul li:active{transform: 200ms scale(0.9); }
 
     nav ul li:last-child{display: none;}
+
+    /* Banner */
+
+    #home{
+        padding-top: 2em;
+        height: 30vh;
+        background-image: url("./banner-1.jpg");
+        background-size: cover;
+        animation: banner 10s infinite ease-in-out;
+    }
+
+    @keyframes banner {
+        50%{
+            background-image: url(./banner-2.jpg);
+        }
+    }
+
+    #home h4, p{display: none;}
 }

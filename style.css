@@ -5,13 +5,477 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
 }
 
 html{scroll-behavior: smooth;}
 
+/* Responsive desktop */
+html{font-size: 12px;}
+    
+/* header */
+header{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: fixed;  
+    display: flex;
+}
 
+h1{font-size: 2em; padding: 1em; font-weight: 400; z-index: 1;}
+
+header input[type="checkbox"], label > .material-icons {display: none;}
+
+nav{margin-left: 50%;}
+
+nav ul{list-style: none; display: flex; justify-content: space-around; padding: 1em;}
+
+nav ul li{padding: 1em; margin-right: 1em; border: 0.3px solid #fff;}
+nav ul li a{text-decoration: none; color: #fff; font-size: 1.5em; text-transform: uppercase;}
+
+
+/* Banner */
+
+#home{
+    padding-top: 2em;
+    height: 100vh;
+    background-image: url("./banner-1.jpg");
+    background-size: cover;
+    animation: banner 8s infinite ease-in-out;
+}
+
+@keyframes banner {
+    50%{
+        background-image: url(./banner-2.jpg);
+    }
+}
+
+#home h4, #home p{display: none;}
+
+/* Band/team */
+
+h2{
+    font-size: 2em; 
+    font-weight: 400; 
+    text-align: center; 
+    text-transform: uppercase; 
+    padding: 1em;
+}
+
+#band p{font-size: 1.2em; padding: 1em 8em 0 8em; text-align: justify;}
+
+.member-names{display: flex; flex-wrap: wrap; justify-content: center;}
+.member-tile{padding: 1em; text-align: center;}
+.member-tile figcaption{font-size: 1.2em;}
+.member-tile img{width: 10em;}
+
+/* tour */
+
+.caption{font-size: 1.2em; color: #828282; text-transform: capitalize; font-style: italic; text-align: center;}
+
+#tour{
+    background: #000;
+    color: #fff;
+    padding-bottom: 20%;
+}
+
+.months ul{
+    background-color: #c3c2c2b2; 
+    width: 80%; 
+    margin: 10% 0 0 10%;
+    list-style: none;
+}
+
+.months ul li{
+    font-size: 1.5em;
+    padding: 0.5em; 
+    font-weight: 300;
+    border: 0.5px solid #000;
+}
+
+.months ul li span{
+    background-color: #ff5151;
+    padding: 0.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+.upcoming-places{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loc-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 5% 0 0 2.5%;
+    background: #fff;
+    color: #000;
+    padding: 0.5em;
+}
+.loc-card img{width: 20vw;}
+.loc-card .name{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+.loc-card .date{
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: #828282;
+    font-weight: 400;
+}
+
+.loc-card .desc{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 1em 1em 1em 0.5em ;
+}
+
+.loc-card button{
+    border: transparent;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5em;
+    padding: 0.5em;
+    width: 50%;
+}
+
+.loc-card button:active{
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    border: 0.7px solid #000;
+    transition-duration: 100ms;
+}
+
+/* contact */
+#contact{
+    width: 100vw;
+    height: 120vh;
+}
+
+.details{
+    padding: 1em;
+    
+}
+
+.sub-detail{
+    display: flex;
+    padding: 0.5em;
+    
+}
+
+.det{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-left: 0.5em;
+    align-self: center;
+}
+
+.det a{text-decoration: none; color: #000;}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+form input{
+    padding: 1em;
+    caret-color: #ff5151;
+    background-color: #c3c2c242;
+    border: 0.3px solid #828282;
+}
+
+form input::placeholder{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#form-message{
+    margin-top: 0.5em;
+    padding-bottom: 8em;
+}
+
+.form-btn-send{
+    width: 5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    background: #000;
+    color: #fff;
+    font-size: 1.5em;
+    border: transparent;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* footer */
+    footer{
+        background-color: #2e2d2d;
+        text-align: center;
+    }
+
+    footer p{
+        padding: 0.5em;
+    }
+
+    footer p a{
+        color: #fff;
+        font-size: 1.2em;
+    font-weight: 600;
+    }
+
+
+/* Responsive between 375px to 680px */
+@media (min-width: 375px) and (max-width: 600px){
+    html{font-size: 15px;}
+    
+    /* header */
+    header{
+        width: 100%;
+        background: #000;
+        color: #fff;
+        position: fixed;  
+        display: flex;
+    }
+
+    h1{font-size: 2em; padding: 0.2em; font-weight: 400; z-index: 1;}
+
+    nav{display: none;}
+
+    header input[type="checkbox"]{display: none;}
+
+    .toggle-label{align-self: center; position: relative;}
+
+    #toggle-menu:checked ~ nav{
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 100%;
+    }
+
+    nav ul{list-style: none; text-align: left; padding: 4em;}
+
+    nav ul li{padding: 1em;}
+    nav ul li a{text-decoration: none; color: #fff; font-size: 1.5em; text-transform: uppercase;}
+
+    nav ul li:active{transform: 200ms scale(0.9); }
+
+
+    /* Banner */
+
+    #home{
+        padding-top: 2em;
+        height: 60vh;
+        background-image: url("./banner-1.jpg");
+        background-size: cover;
+        animation: banner 8s infinite ease-in-out;
+    }
+
+    @keyframes banner {
+        50%{
+            background-image: url(./banner-2.jpg);
+        }
+    }
+
+    #home h4, #home p{display: none;}
+
+    /* Band/team */
+
+    h2{
+        font-size: 2em; 
+        font-weight: 400; 
+        text-align: center; 
+        text-transform: uppercase; 
+        padding: 1em;
+    }
+
+    #band p{font-size: 1.2em; padding: 1em; text-align: justify;}
+
+    .member-names{display: flex; flex-wrap: wrap; justify-content: center;}
+    .member-tile{padding: 1em; text-align: center;}
+    .member-tile figcaption{font-size: 1.5em;}
+    .member-tile img{width: 20em;}
+
+    /* tour */
+
+    .caption{font-size: 1.2em; color: #828282; text-transform: capitalize; font-style: italic; text-align: center;}
+
+    #tour{
+        background: #000;
+        color: #fff;
+        padding-bottom: 20%;
+    }
+
+    .months ul{
+        background-color: #c3c2c2b2; 
+        width: 80%; 
+        margin: 10% 0 0 10%;
+        list-style: none;
+    }
+
+    .months ul li{
+        font-size: 1.5em;
+        padding: 0.5em; 
+        font-weight: 300;
+        border: 0.5px solid #000;
+    }
+
+    .months ul li span{
+        background-color: #ff5151;
+        padding: 0.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        color: #fff;
+    }
+
+    .upcoming-places{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .loc-card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10% 5% 0 5%;
+        background: #fff;
+        color: #000;
+        padding: 0.5em;
+    }
+    .loc-card img{width: 90vw;}
+    .loc-card .name{
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em;
+    }
+
+    .loc-card .date{
+        font-size: 1.5em;
+        padding: 0.5em;
+        color: #828282;
+        font-weight: 400;
+    }
+
+    .loc-card .desc{
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 1em 1em 1em 0.5em ;
+    }
+
+    .loc-card button{
+        border: transparent;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.5em;
+        padding: 0.5em;
+        width: 50%;
+    }
+
+    .loc-card button:active{
+        background: #fff;
+        color: #000;
+        font-weight: 700;
+        border: 0.7px solid #000;
+        transition-duration: 100ms;
+    }
+
+    /* contact */
+    #contact{
+        width: 100vw;
+        height: 120vh;
+    }
+
+    .details{
+        padding: 1em;
+        
+    }
+
+    .sub-detail{
+        display: flex;
+        padding: 0.5em;
+        
+    }
+
+    .det{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-left: 0.5em;
+        align-self: center;
+    }
+
+    .det a{text-decoration: none; color: #000;}
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    form input{
+        padding: 1em;
+        caret-color: #ff5151;
+        background-color: #c3c2c242;
+        border: 0.3px solid #828282;
+    }
+
+    form input::placeholder{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    #form-message{
+        margin-top: 0.5em;
+        padding-bottom: 8em;
+    }
+
+    .form-btn-send{
+        width: 5em;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        background: #000;
+        color: #fff;
+        font-size: 1.5em;
+        border: transparent;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    /* footer */
+     footer{
+         background-color: #2e2d2d;
+         text-align: center;
+     }
+
+     footer p{
+         padding: 0.5em;
+     }
+
+     footer p a{
+         color: #fff;
+         font-size: 1.2em;
+        font-weight: 600;
+     }
+
+}
+
+/* Responsive for less than 375px */
 @media (max-width: 375px){
+
+    html{font-size: 10px;}
     /* header */
     header{
         width: 100%;

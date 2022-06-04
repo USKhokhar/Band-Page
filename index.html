@@ -110,26 +110,38 @@
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <caption>Fan? Drop a note!</caption>
+        <p class="caption">Fan? Drop a note!</p>
 
         <div class="details">
-            <span class="material-icons">location_on</span>
-            <p class="address">Delhi, India</p>
+            <div class="sub-detail">
+                <span class="material-icons">location_on</span>
+                <p id="address" class="det">Delhi, India</p>
+            </div>
 
-            <span class="material-icons">phone</span>
-            <p class="phone">Phone: +91 xxxxxxxxxx</p>
+            <div class="sub-detail">
+                <span class="material-icons">phone</span>
+                <p id="phone" class="det">Phone: +91 xxxxxxxxxx</p>
+            </div>
 
-            <span class="material-icons">email</span>
-            <p class="email">Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+            <div class="sub-detail">
+                <span class="material-icons">email</span>
+                <p id="email" class="det">Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+            </div>
         </div>
 
-        <div class="form">
+        <form>
             <input type="text" name="name" id="form-name" placeholder="Name">
             <input type="email" name="email" id="form-email" placeholder="Email">
             <input type="text" name="message" id="form-message" placeholder="Your Message">
-            <button>Send</button>
-        </div>
+            <button class="form-btn-send">Send</button>
+        </form>
 
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="git-profile"><a href="https://github.com/USKhokhar">&copy; U.S.Khokhar</a></p>
+        <p class="git-repo"><a href="https://github.com/USKhokhar/Band-Page">Git Repo</a></p>
+    </footer>
 </body>
 </html>

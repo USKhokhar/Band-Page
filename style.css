@@ -65,7 +65,13 @@ html{scroll-behavior: smooth;}
 
     /* Band/team */
 
-    h2{font-size: 2em; font-weight: 400; text-align: center; text-transform: uppercase; padding: 0.5em;}
+    h2{
+        font-size: 2em; 
+        font-weight: 400; 
+        text-align: center; 
+        text-transform: uppercase; 
+        padding: 1em;
+    }
 
     #band p{font-size: 1.2em; padding: 1em; text-align: justify;}
 
@@ -81,6 +87,7 @@ html{scroll-behavior: smooth;}
     #tour{
         background: #000;
         color: #fff;
+        padding-bottom: 20%;
     }
 
     .months ul{
@@ -160,5 +167,82 @@ html{scroll-behavior: smooth;}
         border: 0.7px solid #000;
         transition-duration: 100ms;
     }
+
+    /* contact */
+    #contact{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .details{
+        padding: 1em;
+        
+    }
+
+    .sub-detail{
+        display: flex;
+        padding: 0.5em;
+        
+    }
+
+    .det{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-left: 0.5em;
+        align-self: center;
+    }
+
+    .det a{text-decoration: none; color: #000;}
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    form input{
+        padding: 1em;
+        caret-color: #ff5151;
+        background-color: #c3c2c242;
+        border: 0.3px solid #828282;
+    }
+
+    form input::placeholder{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    #form-message{
+        margin-top: 0.5em;
+        padding-bottom: 8em;
+    }
+
+    .form-btn-send{
+        width: 5em;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        background: #000;
+        color: #fff;
+        font-size: 1.5em;
+        border: transparent;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    /* footer */
+     footer{
+         background-color: #2e2d2d;
+         text-align: center;
+     }
+
+     footer p{
+         padding: 0.5em;
+     }
+
+     footer p a{
+         color: #fff;
+         font-size: 1.2em;
+        font-weight: 600;
+     }
 
 }

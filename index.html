@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <title>Band Page</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home">home</a></li>
-                <li><a href="band">band</a></li>
-                <li><a href="tour">tour</a></li>
-                <li><a href="contact">contact</a></li>
-                <li><span>search icon</span></li>
-            </ul>
-        </nav>
-    </header>
-
+    <section id="home">
+        <header>
+        
+            <h1>BAND PAGE</h1> 
+            <input type="checkbox" name="toggler" id="toggle-menu">
+            <nav>
+                <ul>
+                    <li><a href= "#home">home</a></li>
+                    <li><a href="#band">band</a></li>
+                    <li><a href="#tour">tour</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><span class="material-symbols-outlined">search</span></li>
+                </ul>
+            </nav>
+    
+            <!-- hamburger menu -->
+            <label for="toggle-menu" class="toggle-label">
+                <span class="material-icons">arrow_drop_down</span>
+            </label>
+            
+        
+        </header>
+    
+    </section>
+    
     <!-- Banner-->
     <section id="home">
         <h4>New Delhi</h4>
@@ -91,13 +109,13 @@
         <caption>Fan? Drop a note!</caption>
 
         <div class="details">
-            <span>location icon</span>
+            <span class="material-icons">location_on</span>
             <p class="address">Delhi, India</p>
 
-            <span>phone icon</span>
+            <span class="material-icons">phone</span>
             <p class="phone">Phone: +91 xxxxxxxxxx</p>
 
-            <span>email icon</span>
+            <span class="material-icons">email</span>
             <p class="email">Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
         </div>
 
